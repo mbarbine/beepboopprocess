@@ -1,0 +1,67 @@
+{
+  "resourceId": "cmgvi582y02hg7x17wrox6wbu",
+  "resourceType": "flow",
+  "stableId": "2271ef92-4e20-4a70-ae0a-ca4ffdef6671",
+  "changeData": {
+    "name": "Untitled Workflow - 10/17/2025, 4:50 PM",
+    "nodes": [
+      {
+        "id": "64e7d203-2997-45d0-815d-8ae9b375fbe0",
+        "data": {
+          "key": "process-internal-switch",
+          "FERN": "process-internal::action:switch",
+          "data": {
+            "cases": {
+              "cases": [
+                {
+                  "id": "f63409d1-6bd2-4d6c-a58d-d1f9c7b2400b",
+                  "label": "Case 1",
+                  "expression": ""
+                },
+                {
+                  "id": "9f08c24a-0ad5-4245-ab50-1975f8b44577",
+                  "label": "Case 2",
+                  "expression": ""
+                }
+              ],
+              "defaultLabel": "Default Case",
+              "enableDefault": true
+            },
+            "switchExpression": ""
+          },
+          "name": "switch_1",
+          "type": "action",
+          "$meta": {
+            "cases": {
+              "expectedType": "object"
+            },
+            "switchExpression": {
+              "expectedType": "$infer<string|number|boolean>"
+            }
+          },
+          "title": "Switch",
+          "noAuth": true,
+          "returns": "SwitchResponse",
+          "nodeType": "action"
+        },
+        "slot": {
+          "id": "default",
+          "label": "Default"
+        },
+        "active": true,
+        "groupId": "default"
+      }
+    ],
+    "config": {
+      "memory": 256,
+      "timeout": 30,
+      "runInVPC": false,
+      "autoRetry": false,
+      "limitConcurrency": false,
+      "limitExecutionRate": false,
+      "eliminateColdStarts": false,
+      "disableDataRetention": false,
+      "sendErrorNotifications": true
+    }
+  }
+}

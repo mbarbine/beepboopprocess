@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "projectId": "cmgvi0g8w02h37x17nsh7xlzf",
+  "projectPath": "default",
+  "projectName": "default",
+  "generatedAt": "2026-04-03T07:58:34.002Z",
+  "source": "process.publish",
+  "projectVersionId": "cmnim3kpj002687c2fqapm1fn",
+  "resources": [
+    {
+      "resourceType": "flow",
+      "resourceId": "cmgvi582y02hg7x17wrox6wbu",
+      "stableId": "2271ef92-4e20-4a70-ae0a-ca4ffdef6671",
+      "relativePath": "resources/flow/2271ef92-4e20-4a70-ae0a-ca4ffdef6671__cmgvi582y02hg7x17wrox6wbu.json"
+    }
+  ]
+}
