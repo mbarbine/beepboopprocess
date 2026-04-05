@@ -50,6 +50,116 @@
         },
         "active": true,
         "groupId": "default"
+      },
+      {
+        "id": "269d2f444ZS7CNr1",
+        "data": {
+          "key": "_8x8_connect-send-sms",
+          "FERN": "_8x8_connect::action:send-sms",
+          "data": {
+            "text": "This is test",
+            "$auth": "_8x8_connect::credential::[cmkzxl7gp00009317y8rki01q]",
+            "destination": "This is a test",
+            "$authEnableUserProxy": null
+          },
+          "name": "sendSms_1",
+          "type": "action",
+          "$meta": {
+            "text": {
+              "expectedType": "string"
+            },
+            "destination": {
+              "expectedType": "string"
+            }
+          },
+          "title": "Send SMS",
+          "noAuth": false,
+          "fernKey": "_8x8_connect::action:send-sms",
+          "returns": null,
+          "initValue": null
+        },
+        "slot": {
+          "id": "f63409d1-6bd2-4d6c-a58d-d1f9c7b2400b",
+          "label": "Case 1",
+          "visible": true,
+          "isEnabled": true,
+          "branchLabel": "CASE",
+          "labelPlaceholder": "Case 1"
+        },
+        "active": true,
+        "groupId": "default",
+        "parentId": "64e7d203-2997-45d0-815d-8ae9b375fbe0"
+      },
+      {
+        "id": "oDquemc69d2f5277",
+        "data": {
+          "APP": "_302_ai::credential",
+          "FERN": "doflo::action:code[1cc504bb-5d02-4915-947b-ea96b24a5090]",
+          "data": {
+            "message": "This is a test of the system"
+          },
+          "name": "useAny-302aiApiInNodejs_1",
+          "type": "action",
+          "$meta": {
+            "message": {
+              "mode": "value",
+              "value": "This is a test of the system",
+              "format": "template",
+              "isEditing": false,
+              "expression": "",
+              "expectedType": "string",
+              "isFullScreen": false
+            }
+          },
+          "title": "Use any 302.AI API in NodeJS",
+          "$imports": {
+            "zod": "4.3.6"
+          },
+          "TEMPLATE": "process-internal::action:custom-code-nodejs"
+        },
+        "slot": {
+          "id": "9f08c24a-0ad5-4245-ab50-1975f8b44577",
+          "label": "Case 2",
+          "visible": true,
+          "isEnabled": true,
+          "branchLabel": "CASE",
+          "labelPlaceholder": "Case 2"
+        },
+        "active": true,
+        "groupId": "default",
+        "parentId": "64e7d203-2997-45d0-815d-8ae9b375fbe0"
+      },
+      {
+        "id": "RlZajX69d2f70eO6",
+        "data": {
+          "APP": "_302_ai::credential",
+          "FERN": "doflo::action:code[ae2c0b5c-707b-49dd-aefd-f3fd1a06dc6c]",
+          "data": {},
+          "name": "useAny-302aiApiInNodejs_2",
+          "type": "action",
+          "$meta": {
+            "message": {
+              "expectedType": "string"
+            }
+          },
+          "title": "Use any 302.AI API in NodeJS",
+          "$imports": {
+            "zod": "4.3.6"
+          },
+          "TEMPLATE": "process-internal::action:custom-code-nodejs"
+        },
+        "slot": {
+          "id": "64e7d203-2997-45d0-815d-8ae9b375fbe0_default_case",
+          "label": "Default Case",
+          "visible": true,
+          "isEnabled": true,
+          "branchLabel": "DEFAULT",
+          "hideOnDisable": true,
+          "labelPlaceholder": "Default Case"
+        },
+        "active": true,
+        "groupId": "default",
+        "parentId": "64e7d203-2997-45d0-815d-8ae9b375fbe0"
       }
     ],
     "config": {

@@ -3,10 +3,22 @@
   "projectId": "cmgvi0g8w02h37x17nsh7xlzf",
   "projectPath": "default",
   "projectName": "default",
-  "generatedAt": "2026-04-03T07:58:34.002Z",
+  "generatedAt": "2026-04-05T23:58:56.794Z",
   "source": "process.publish",
-  "projectVersionId": "cmnim3kpj002687c2fqapm1fn",
+  "projectVersionId": "cmnmfaciv00071ab2s0y66y0y",
   "resources": [
+    {
+      "resourceType": "customElementDefinition",
+      "resourceId": "ae2c0b5c-707b-49dd-aefd-f3fd1a06dc6c",
+      "stableId": null,
+      "relativePath": "resources/customElementDefinition/___ae2c0b5c-707b-49dd-aefd-f3fd1a06dc6c.json"
+    },
+    {
+      "resourceType": "customElementDefinition",
+      "resourceId": "1cc504bb-5d02-4915-947b-ea96b24a5090",
+      "stableId": null,
+      "relativePath": "resources/customElementDefinition/___1cc504bb-5d02-4915-947b-ea96b24a5090.json"
+    },
     {
       "resourceType": "flow",
       "resourceId": "cmgvi582y02hg7x17wrox6wbu",
