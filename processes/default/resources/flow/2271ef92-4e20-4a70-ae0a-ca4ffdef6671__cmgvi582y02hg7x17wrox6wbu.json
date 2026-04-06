@@ -3,7 +3,7 @@
   "resourceType": "flow",
   "stableId": "2271ef92-4e20-4a70-ae0a-ca4ffdef6671",
   "changeData": {
-    "name": "Untitled Workflow - 10/17/2025, 4:50 PM",
+    "name": "Primary Workflow",
     "nodes": [
       {
         "id": "64e7d203-2997-45d0-815d-8ae9b375fbe0",
@@ -31,14 +31,6 @@
           },
           "name": "switch_1",
           "type": "action",
-          "$meta": {
-            "cases": {
-              "expectedType": "object"
-            },
-            "switchExpression": {
-              "expectedType": "$infer<string|number|boolean>"
-            }
-          },
           "title": "Switch",
           "noAuth": true,
           "returns": "SwitchResponse",
@@ -64,14 +56,6 @@
           },
           "name": "sendSms_1",
           "type": "action",
-          "$meta": {
-            "text": {
-              "expectedType": "string"
-            },
-            "destination": {
-              "expectedType": "string"
-            }
-          },
           "title": "Send SMS",
           "noAuth": false,
           "fernKey": "_8x8_connect::action:send-sms",
@@ -100,17 +84,6 @@
           },
           "name": "useAny-302aiApiInNodejs_1",
           "type": "action",
-          "$meta": {
-            "message": {
-              "mode": "value",
-              "value": "This is a test of the system",
-              "format": "template",
-              "isEditing": false,
-              "expression": "",
-              "expectedType": "string",
-              "isFullScreen": false
-            }
-          },
           "title": "Use any 302.AI API in NodeJS",
           "$imports": {
             "zod": "4.3.6"
@@ -137,11 +110,6 @@
           "data": {},
           "name": "useAny-302aiApiInNodejs_2",
           "type": "action",
-          "$meta": {
-            "message": {
-              "expectedType": "string"
-            }
-          },
           "title": "Use any 302.AI API in NodeJS",
           "$imports": {
             "zod": "4.3.6"
