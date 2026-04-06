@@ -80,10 +80,20 @@
           "APP": "_302_ai::credential",
           "FERN": "doflo::action:code[1cc504bb-5d02-4915-947b-ea96b24a5090]",
           "data": {
-            "message": "This is a test of the system"
+            "$auth": "_302_ai::credential::[cmnkh0i0p01fx177clqxbl0us]",
+            "message": "This is a test of the system",
+            "$authEnableUserProxy": null
           },
           "name": "useAny-302aiApiInNodejs_1",
           "type": "action",
+          "$meta": {
+            "user": {
+              "expectedType": "z.object({\n        name: z.string(),\n        email: z.email(),\n        age: z.number(),\n      })"
+            },
+            "message": {
+              "expectedType": "string"
+            }
+          },
           "title": "Use any 302.AI API in NodeJS",
           "$imports": {
             "zod": "4.3.6"
