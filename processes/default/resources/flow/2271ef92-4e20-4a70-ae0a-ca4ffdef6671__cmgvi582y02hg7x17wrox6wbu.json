@@ -24,7 +24,7 @@
                   "expression": ""
                 }
               ],
-              "defaultLabel": "Default Case",
+              "defaultLabel": "Default Case 2",
               "enableDefault": true
             },
             "switchExpression": ""
@@ -151,5 +151,17 @@
       "disableDataRetention": false,
       "sendErrorNotifications": true
     }
+  },
+  "errors": {
+    "64e7d203-2997-45d0-815d-8ae9b375fbe0": [
+      {
+        "id": "required-property-64e7d203-2997-45d0-815d-8ae9b375fbe0-switchExpression",
+        "type": "data",
+        "nodeId": "64e7d203-2997-45d0-815d-8ae9b375fbe0",
+        "message": "Required property \"Switch Expression\" is missing in \"switch_1\"",
+        "severity": "error",
+        "autoFixable": false
+      }
+    ]
   }
 }
