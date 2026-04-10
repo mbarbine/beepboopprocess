@@ -9,6 +9,18 @@
   "editingSessionId": "cmnim5tha002887c2pde39x6s",
   "resources": [
     {
+      "resourceType": "customElementDefinition",
+      "resourceId": "ae2c0b5c-707b-49dd-aefd-f3fd1a06dc6c",
+      "stableId": null,
+      "relativePath": "resources/customElementDefinition/___ae2c0b5c-707b-49dd-aefd-f3fd1a06dc6c.json"
+    },
+    {
+      "resourceType": "customElementDefinition",
+      "resourceId": "1cc504bb-5d02-4915-947b-ea96b24a5090",
+      "stableId": null,
+      "relativePath": "resources/customElementDefinition/___1cc504bb-5d02-4915-947b-ea96b24a5090.json"
+    },
+    {
       "resourceType": "flow",
       "resourceId": "cmgvi582y02hg7x17wrox6wbu",
       "stableId": "2271ef92-4e20-4a70-ae0a-ca4ffdef6671",

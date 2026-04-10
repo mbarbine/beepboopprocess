@@ -1,0 +1,20 @@
+{
+  "resourceId": "1cc504bb-5d02-4915-947b-ea96b24a5090",
+  "resourceType": "customElementDefinition",
+  "stableId": null,
+  "changeData": {
+    "id": "1cc504bb-5d02-4915-947b-ea96b24a5090",
+    "fern": "doflo::action:code[1cc504bb-5d02-4915-947b-ea96b24a5090]",
+    "projectId": "cmgvi0g8w02h37x17nsh7xlzf",
+    "shareable": false,
+    "compiledAt": "2026-04-06T00:46:16.988Z",
+    "sourceCode": "// To use any npm package, just import it\nimport { type DeriveActionInstance, type ActionRunOptions, type RunReturn, defineAction } from \"@process.co/element-types\";\nimport { z } from \"zod\";\n//import axios from \"axios\";\n\n// Define the action\nconst customCodeNodejsAction = defineAction({\n\n  key: \"process-internal-custom-code-nodejs\",\n  name: \"Custom Code Node.js\",\n  description: \"Run custom code in a Node.js environment\",\n  version: \"0.0.1\",\n  type: \"action\",\n  noAuth: true, // Set this to true if you do not want to force the user to authenticate the action.\n  returns: \"NodejsResponse\",\n  icon: { type: \"image\", icon: 'https://res.cloudinary.com/process-co/image/upload/v1760728122/nodejsHex.svg' },\n  props: {\n\n    //**\n    // This is an example of a property that can be edited by the user.\n    // If can be removed if you do not need it.\n    //  */\n    message: {\n      type: \"string\",\n      label: \"Message\",\n      description: \"The message to export\",\n    },\n\n    //**\n    // This is an example of a property defined using zod.\n    // If you do not need it, it can be removed.\n    //  */\n    user: {\n      type: z.object({\n        name: z.string(),\n        email: z.email(),\n        age: z.number(),\n      }),\n      label: \"User\",\n      description: \"The user to export\",\n    },\n\n\n  },\n\n  //**\n  // This is the main function that will be executed when the action is run.\n  // It will export the message and user properties to the parent process.\n  //  */\n  run: async function ({ $ }: ActionRunOptions) {\n\n    $.export(\"message\", this.message);\n    $.export(\"user\", this.user);\n\n    return {\n      success: true,\n      message: \"Custom Code Case 2\",\n    };\n\n  },\n});\n\n// Derive types from the implementation\nexport type NodejsAction = typeof customCodeNodejsAction;\nexport type NodejsResponse = RunReturn<NodejsAction>;\nexport type NodejsActionInstance = DeriveActionInstance<NodejsAction>;\n\nexport default customCodeNodejsAction;",
+    "compileError": null,
+    "exportSchema": null,
+    "compileStatus": "success",
+    "compiledRuntime": "action",
+    "exportSchemaKey": null,
+    "compiledSourceKey": "dynamic-elements/actions/1cc504bb-5d02-4915-947b-ea96b24a5090/latest.mjs",
+    "exportSchemaZodex": null
+  }
+}
